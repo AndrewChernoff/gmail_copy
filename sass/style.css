@@ -1,0 +1,89 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  height: 60px;
+  -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #dadce0;
+          box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #dadce0;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 8px 72px 0 72px;
+}
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.header__logo img {
+  max-width: 30px;
+  margin-right: 10px;
+}
+.header__logo span {
+  font-size: 22px;
+}
+.header__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 490px;
+  height: 45px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.header__work {
+  width: 100px;
+  padding: 12px 24px 11px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #1a73e8;
+}
+.header__work:hover {
+  background: rgba(191, 212, 243, 0.5);
+  color: blue;
+}
+.header__signin {
+  background-color: white;
+  border-color: #dadce0;
+  color: #1a73e8;
+}
+.header__signin:hover {
+  background: rgba(191, 212, 243, 0.5);
+  color: blue;
+  border-color: #1a73e8;
+  height: 45px;
+}
+.header__create {
+  background-color: #1a73e8;
+  color: white;
+}
+.header__create:hover {
+  background-color: #4545e0;
+}
+.header__button {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 24px 11px;
+  border-radius: 4px;
+}
+
+.smt {
+  padding-top: 100px;
+}
