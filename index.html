@@ -26,58 +26,49 @@
         </div>
     </header>
 
-    <div class="smt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime nesciunt error vero
-        reprehenderit ullam
-        quos exercitationem? Aut rerum a error porro, soluta est enim! Non aspernatur repellat reprehenderit nihil.
-    </div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime nesciunt error vero reprehenderit ullam
-        quos exercitationem? Aut rerum a error porro, soluta est enim! Non aspernatur repellat reprehenderit nihil.
-    </div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime nesciunt error vero reprehenderit ullam
-        quos exercitationem? Aut rerum a error porro, soluta est enim! Non aspernatur repellat reprehenderit nihil.
-    </div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime nesciunt error vero reprehenderit ullam
-        quos exercitationem? Aut rerum a error porro, soluta est enim! Non aspernatur repellat reprehenderit nihil.
-    </div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime nesciunt error vero reprehenderit ullam
-        quos exercitationem? Aut rerum a error porro, soluta est enim! Non aspernatur repellat reprehenderit nihil.
-    </div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime nesciunt error vero reprehenderit ullam
-        quos exercitationem? Aut rerum a error porro, soluta est enim! Non aspernatur repellat reprehenderit nihil.
-    </div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime nesciunt error vero reprehenderit ullam
-        quos exercitationem? Aut rerum a error porro, soluta est enim! Non aspernatur repellat reprehenderit nihil.
-    </div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime nesciunt error vero reprehenderit ullam
-        quos exercitationem? Aut rerum a error porro, soluta est enim! Non aspernatur repellat reprehenderit nihil.
-    </div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime nesciunt error vero reprehenderit ullam
-        quos exercitationem? Aut rerum a error porro, soluta est enim! Non aspernatur repellat reprehenderit nihil.
-    </div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime nesciunt error vero reprehenderit ullam
-        quos exercitationem? Aut rerum a error porro, soluta est enim! Non aspernatur repellat reprehenderit nihil.
-    </div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime nesciunt error vero reprehenderit ullam
-        quos exercitationem? Aut rerum a error porro, soluta est enim! Non aspernatur repellat reprehenderit nihil.
-    </div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime nesciunt error vero reprehenderit ullam
-        quos exercitationem? Aut rerum a error porro, soluta est enim! Non aspernatur repellat reprehenderit nihil.
-    </div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime nesciunt error vero reprehenderit ullam
-        quos exercitationem? Aut rerum a error porro, soluta est enim! Non aspernatur repellat reprehenderit nihil.
-    </div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime nesciunt error vero reprehenderit ullam
-        quos exercitationem? Aut rerum a error porro, soluta est enim! Non aspernatur repellat reprehenderit nihil.
-    </div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime nesciunt error vero reprehenderit ullam
-        quos exercitationem? Aut rerum a error porro, soluta est enim! Non aspernatur repellat reprehenderit nihil.
-    </div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime nesciunt error vero reprehenderit ullam
-        quos exercitationem? Aut rerum a error porro, soluta est enim! Non aspernatur repellat reprehenderit nihil.
-    </div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime nesciunt error vero reprehenderit ullam
-        quos exercitationem? Aut rerum a error porro, soluta est enim! Non aspernatur repellat reprehenderit nihil.
-    </div>
+    <section class="feature">
+        <div class="feature__container">
+            <div class="feature__block">
+                <div class="feature__block__title">
+                    Secure, smart, and easy to use email
+                </div>
+                <div class="feature__block__descr">
+                    Get more done with Gmail. Now integrated with Google Chat, Google Meet, and more, all in one place.
+                </div>
+                <div class="feature__buttons">
+                    <button class="header__create header__button">Ceate an account</button>
+                    <a href="#" class="header__work header__button">For work</a>
+                </div>
+            </div>
+            <img class="feature__img" src="img/feature_img.webp" alt="/">
+        </div>
+    </section>
+
+    <script>
+        let arr = [
+            {
+                'cars': 5,
+                'speed': 10
+            },
+            {
+                'cars': 6,
+                'speed': 11
+            },
+            {
+                'cars': 7,
+                'speed': 12
+            }
+        ]
+
+        function qwert(array) {
+            array.forEach((element) => {
+                let newarr = Object.values(element);
+                console.log(newarr.toString());
+            });
+        }
+
+        qwert(arr);
+    </script>
 
 </body>
 
