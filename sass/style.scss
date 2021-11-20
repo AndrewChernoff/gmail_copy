@@ -252,5 +252,56 @@
             color: #5f6368;
         }
     }
-    
+}
+
+.workspace {
+    padding: 100px 0;
+    &__content {
+        min-height: 455px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logos {
+        height: 40px;
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        font-size: 42px;
+        line-height: 52px;
+        font-weight: 500;
+    }
+    &__subtitle {
+        font-size: 27px;
+        line-height: 38px;
+        letter-spacing: .0247517px;
+        color: #5f6368;
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__descr {
+        font-size: 18px;
+        line-height: 28px;
+        min-height: 112px;
+        max-width: 575px;
+        text-align: center;
+    }
+    &__link {
+        padding: 12px 24px 11px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+        &:hover {
+            background: rgba(191, 212, 243, 0.5);
+            color: blue;
+        }
+        &:visited {
+            color: blue;
+        }
+    }
 }
