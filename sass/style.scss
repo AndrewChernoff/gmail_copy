@@ -1,3 +1,7 @@
+$specgrey:#f8f9fa;
+$buttongrey: rgba(191, 212, 243, 0.5);
+$fontBtn: #1a73e8;
+
 * {
     font-family: 'Open Sans', sans-serif;
 }
@@ -5,6 +9,13 @@
 .container {
     max-width: 1250px;
     margin: 0 auto;
+}
+
+.main__button {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 24px 11px;
+    border-radius: 4px;
 }
 
 .header {
@@ -44,36 +55,36 @@
         font-size: 16px;
         font-weight: 500;
         text-align: center;
-        color: #1a73e8;
+        color: $fontBtn;
         &:hover {
-            background: rgba(191, 212, 243, 0.5);
+            background: $buttongrey;
             color: blue;
         }
     }
     &__signin {
         background-color: white;
         border-color: #dadce0;
-        color: #1a73e8;
+        color: $fontBtn;
             &:hover {
             background: rgba(191, 212, 243, 0.5);
             color: blue;
-            border-color: #1a73e8;
+            border-color: $fontBtn;
             height: 45px;
         }
     }
     &__create {
-        background-color: #1a73e8;
+        background-color: $fontBtn;
         color: white;
         &:hover {
             background-color: rgb(69, 69, 224);
         }
     }
-    &__button {
+    /* &__button {
         font-size: 16px;
         font-weight: 500;
         padding: 12px 24px 11px;
         border-radius: 4px;
-    }
+    } */
 }
 
 .feature {
@@ -227,7 +238,7 @@
 
 .tout {
     min-height: 245px;
-    background: #f8f9fa;
+    background: $specgrey;
     padding: 100px 0;
     &__items {
         display: flex;
@@ -297,11 +308,58 @@
         font-size: 20px;
         font-weight: 500;
         &:hover {
-            background: rgba(191, 212, 243, 0.5);
+            background: $buttongrey;
             color: blue;
         }
         &:visited {
             color: blue;
         }
     }
+}
+
+.answers {
+    padding: 100px 0;
+    background: $specgrey;
+    &__content {
+        display: grid;
+        grid-gap: 130px;
+        grid-template-columns: 400px auto;
+    }
+    &__title {
+        font-size: 42px;
+        font-weight: 500;
+        margin-bottom: 60px;
+    }
+    &__help {
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        border: rgb(218, 217, 217) solid 1px; 
+        &__title {
+            font-weight: 500;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        &__descr {
+            margin-bottom: 30px;
+            font-size: 18px;
+            font-weight: 400;
+            color: #5f6368;
+        }
+        button {
+            background: white;
+            color: $fontBtn;
+            &:hover {
+                background: rgba(191, 212, 243, 0.5);
+                color: blue;
+                border-color: #1a73e8;
+        }
+    }   
+}
+    &__question {
+        border-bottom: black 0.5px solid;
+        padding: 35px 0;
+        font-size: 17px;
+    }
+
 }
