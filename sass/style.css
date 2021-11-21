@@ -441,7 +441,25 @@
   border-color: #1a73e8;
 }
 .answers__question {
+  position: relative;
   border-bottom: black 0.5px solid;
   padding: 35px 0;
   font-size: 17px;
+  cursor: pointer;
+}
+.answers__question__mark {
+  position: absolute;
+  right: 0;
+}
+.answers__question__descr {
+  display: none;
+}
+
+.rotate_mark {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.show {
+  display: block;
 }

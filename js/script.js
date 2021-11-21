@@ -54,5 +54,21 @@ window.addEventListener('DOMContentLoaded', function () {
     removeOtherImg();
     showOtherImg();
 
+
+    ////question marks
+    const marks = document.querySelectorAll('.answers__question__mark');
+    const answForQuestion = document.querySelectorAll('.answers__question__descr');
+    console.log(marks);
+
+    marks.forEach((mark, i) => {
+        mark.addEventListener('click', function (e) {
+            let target = e.target;
+            if (target == mark) {
+                marks[i].classList.toggle('rotate_mark');
+                answForQuestion[i].classList.toggle('show');
+                answForQuestion[i].style.padding = '25px 0 0 0';
+            }
+        })
+    })
 }
 )

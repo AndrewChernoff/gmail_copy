@@ -357,9 +357,25 @@ $fontBtn: #1a73e8;
     }   
 }
     &__question {
+        position: relative;
         border-bottom: black 0.5px solid;
         padding: 35px 0;
         font-size: 17px;
+        cursor: pointer;
+        &__mark {
+            position: absolute;
+            right: 0;
+        }
+        &__descr {
+            display: none;
+        }
     }
+}
 
+.rotate_mark {
+    transform: rotate(180deg);
+}
+
+.show {
+    display: block;
 }
