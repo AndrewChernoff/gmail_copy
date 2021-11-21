@@ -3,9 +3,6 @@ window.addEventListener('DOMContentLoaded', function () {
     const tabsSubtitle = document.querySelectorAll('.tabs__subtitle');
     const tabsImg = document.querySelectorAll('.tabs__img');
 
-    console.log(tabsSubtitle);
-    console.log(tabsImg);
-
     function removeImg() {
         tabsImg.forEach(el => {
             el.style.display = 'none';
@@ -54,11 +51,21 @@ window.addEventListener('DOMContentLoaded', function () {
     removeOtherImg();
     showOtherImg();
 
-
     ////question marks
+    const answerQuestions = document.querySelectorAll('.answers__question');
     const marks = document.querySelectorAll('.answers__question__mark');
     const answForQuestion = document.querySelectorAll('.answers__question__descr');
-    console.log(marks);
+
+    /* answerQuestions.forEach((answer, i) => {
+        answer.addEventListener('click', function (e) {
+            let target = e.target;
+            if (target == answer) {
+                marks[i].classList.toggle('rotate_mark');
+                answForQuestion[i].classList.toggle('show');
+                answForQuestion[i].style.padding = '25px 0 0 0';
+            }
+        })
+    })
 
     marks.forEach((mark, i) => {
         mark.addEventListener('click', function (e) {
@@ -69,6 +76,24 @@ window.addEventListener('DOMContentLoaded', function () {
                 answForQuestion[i].style.padding = '25px 0 0 0';
             }
         })
-    })
+    }) */
+
+    function onQuestionClick(parametr) {
+        parametr.forEach((param, i) => {
+            param.addEventListener('click', function (e) {
+                let target = e.target;
+                if (target == param) {
+                    marks[i].classList.toggle('rotate_mark');
+                    answForQuestion[i].classList.toggle('show');
+                    answForQuestion[i].style.padding = '25px 0 0 0';
+                }
+            })
+        })
+    }
+
+    onQuestionClick(answerQuestions);
+    onQuestionClick(marks);
+
+
 }
 )

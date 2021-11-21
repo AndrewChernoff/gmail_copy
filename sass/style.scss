@@ -1,6 +1,11 @@
 $specgrey:#f8f9fa;
 $buttongrey: rgba(191, 212, 243, 0.5);
 $fontBtn: #1a73e8;
+$descrOrSubt: #5f6368; 
+
+@mixin  visited_link {
+    color: blue;
+}
 
 * {
     font-family: 'Open Sans', sans-serif;
@@ -59,6 +64,7 @@ $fontBtn: #1a73e8;
         &:hover {
             background: $buttongrey;
             color: blue;
+            transition: background-color 1s, color 1s;
         }
     }
     &__signin {
@@ -66,10 +72,11 @@ $fontBtn: #1a73e8;
         border-color: #dadce0;
         color: $fontBtn;
             &:hover {
-            background: rgba(191, 212, 243, 0.5);
+            background-color: rgba(191, 212, 243, 0.5);
             color: blue;
             border-color: $fontBtn;
             height: 45px;
+            transition: background-color 1s, color 1s, border-color 1s;
         }
     }
     &__create {
@@ -77,14 +84,9 @@ $fontBtn: #1a73e8;
         color: white;
         &:hover {
             background-color: rgb(69, 69, 224);
+            transition: background-color 1s;
         }
     }
-    /* &__button {
-        font-size: 16px;
-        font-weight: 500;
-        padding: 12px 24px 11px;
-        border-radius: 4px;
-    } */
 }
 
 .feature {
@@ -94,11 +96,6 @@ $fontBtn: #1a73e8;
         grid-gap: 130px;
         grid-template-columns: 465px 800px;
         grid-template-rows: 594px;
-        /* padding-top: 80px;
-        padding-left: 125px;
-        padding-right: 125px;
-        padding-bottom: 100px; */
-        //padding: 80px 125px 100px 125px;
         }
     &__buttons {
         display: flex;
@@ -113,9 +110,11 @@ $fontBtn: #1a73e8;
         min-height: 365px;
         &__title {
             font-size: 64px;
+            font-weight: 400;
         } 
         &__descr {
-            color: #5f6368;
+            color: $descrOrSubt;
+            margin-bottom: 25px;
         }
     }
     &__img {
@@ -150,7 +149,7 @@ $fontBtn: #1a73e8;
     }
 }
     &__descr {
-        color: #5f6368;
+        color: $descrOrSubt;
         font-size: 16px;
         font-weight: 400;
         margin: 10px 0 0 0;
@@ -174,20 +173,12 @@ $fontBtn: #1a73e8;
             width: 3px;
             background: rgb(202, 199, 199);
         }
-        /* &:hover:before {
-            cursor: pointer;
-            color: #1a73e8;
-        } */ 
     }
 }
 
 .other__tabs {
     padding: 80px 125px 100px 125px;
     &__container {
-        /* display: grid;
-        grid-gap: 120px;
-        grid-template-columns: 390px 625px;
-        grid-template-rows: 268px 248px; */
         display: grid;
         grid-gap: 40px;
         grid-template-columns: 660px 539px;
@@ -215,7 +206,7 @@ $fontBtn: #1a73e8;
         }
     }
     &__descr {
-        color: #5f6368;
+        color: $descrOrSubt;
         font-size: 16px;
         font-weight: 400;
         margin: 10px 0 0 0;
@@ -260,7 +251,7 @@ $fontBtn: #1a73e8;
             font-size: 18px;
             font-weight: 500;
             line-height: 28px;
-            color: #5f6368;
+            color: $descrOrSubt;
         }
     }
 }
@@ -288,8 +279,7 @@ $fontBtn: #1a73e8;
     &__subtitle {
         font-size: 27px;
         line-height: 38px;
-        letter-spacing: .0247517px;
-        color: #5f6368;
+        color: $descrOrSubt;
         max-width: 700px;
         margin: 0 auto;
         text-align: center;
@@ -312,12 +302,13 @@ $fontBtn: #1a73e8;
             color: blue;
         }
         &:visited {
-            color: blue;
+            @include visited_link
         }
     }
 }
 
 .answers {
+    min-height: 375px;
     padding: 100px 0;
     background: $specgrey;
     &__content {
@@ -344,7 +335,7 @@ $fontBtn: #1a73e8;
             margin-bottom: 30px;
             font-size: 18px;
             font-weight: 400;
-            color: #5f6368;
+            color: $descrOrSubt;
         }
         button {
             background: white;
@@ -354,7 +345,7 @@ $fontBtn: #1a73e8;
                 color: blue;
                 border-color: #1a73e8;
         }
-    }   
+    }
 }
     &__question {
         position: relative;
@@ -368,7 +359,50 @@ $fontBtn: #1a73e8;
         }
         &__descr {
             display: none;
+            color: $descrOrSubt;
+            font-size: 16px;
+            line-height: 24px;
         }
+        &__info {
+            display: block;
+            margin: 24px 0 0 0;
+            text-decoration: none;
+            @include visited_link;
+        }
+    }
+}
+
+.world {
+    padding: 100px 0 50px 0;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__logo {
+        display: block;
+        max-width: 35px;
+    }
+    &__title {
+        font-size: 42px;
+        line-height: 52px;
+        font-weight: 500;
+    }
+    &__subtitle {
+        font-size: 28px;
+        color: $descrOrSubt;
+    }
+    &__create {
+        margin: 30px 0 0 0;
+    }
+    &__work {
+        margin: 20px 0 0 0;
+    }
+}
+
+.kid {
+    &__img {
+        width: -webkit-fill-available;
     }
 }
 
