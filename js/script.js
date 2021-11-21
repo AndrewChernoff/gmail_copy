@@ -28,9 +28,6 @@ window.addEventListener('DOMContentLoaded', function () {
     const otherTabsSubtitle = document.querySelectorAll('.other__tabs__subtitle');
     const otherTabsImg = document.querySelectorAll('.other__tabs__img');
 
-    console.log(otherTabsSubtitle);
-    console.log(otherTabsImg);
-
     function removeOtherImg() {
         otherTabsImg.forEach(el => {
             el.style.display = 'none';
