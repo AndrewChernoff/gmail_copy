@@ -34,9 +34,10 @@ $descrOrSubt: #5f6368;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 8px 0 0 0;
+        padding: 8px 72px 0 72px;
         max-width: 1544px;
         margin: 0 auto;
+
     }
     &__logo {
         display: flex;
@@ -404,7 +405,7 @@ $descrOrSubt: #5f6368;
 
 .footer {
     min-height: 36px;
-    padding: 30px 0;
+    padding: 30px 72px;
     background-color: #f8f9fa;
     &__container {
         max-width: 1544px;
@@ -414,7 +415,6 @@ $descrOrSubt: #5f6368;
         display: flex;
         justify-content: space-between;
         position: relative;
-
     }
     &__small_links {
         display: flex;
