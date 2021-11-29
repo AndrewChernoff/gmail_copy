@@ -41,9 +41,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header__logo img {
   max-width: 30px;
@@ -161,10 +161,10 @@
   display: -ms-grid;
   display: grid;
   grid-gap: 120px;
-  -ms-grid-columns: 625px 120px 390px;
-  grid-template-columns: 625px 390px;
-  -ms-grid-rows: 248px 120px 268px;
-  grid-template-rows: 248px 268px;
+  -ms-grid-columns: 625px 120px 440px;
+  grid-template-columns: 625px 440px;
+  -ms-grid-rows: 275px 120px 275px;
+  grid-template-rows: 275px 275px;
 }
 
 .tabs__container > *:nth-child(1) {

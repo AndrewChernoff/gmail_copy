@@ -53,28 +53,6 @@ window.addEventListener('DOMContentLoaded', function () {
     const marks = document.querySelectorAll('.answers__question__mark');
     const answForQuestion = document.querySelectorAll('.answers__question__descr');
 
-    /* answerQuestions.forEach((answer, i) => {
-        answer.addEventListener('click', function (e) {
-            let target = e.target;
-            if (target == answer) {
-                marks[i].classList.toggle('rotate_mark');
-                answForQuestion[i].classList.toggle('show');
-                answForQuestion[i].style.padding = '25px 0 0 0';
-            }
-        })
-    })
-
-    marks.forEach((mark, i) => {
-        mark.addEventListener('click', function (e) {
-            let target = e.target;
-            if (target == mark) {
-                marks[i].classList.toggle('rotate_mark');
-                answForQuestion[i].classList.toggle('show');
-                answForQuestion[i].style.padding = '25px 0 0 0';
-            }
-        })
-    }) */
-
     function onQuestionClick(parametr) {
         parametr.forEach((param, i) => {
             param.addEventListener('click', function (e) {
@@ -90,7 +68,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
     onQuestionClick(answerQuestions);
     onQuestionClick(marks);
-
 
 }
 )

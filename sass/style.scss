@@ -41,7 +41,7 @@ $descrOrSubt: #5f6368;
     }
     &__logo {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         img {
             max-width: 30px;
             margin-right: 10px;
@@ -130,9 +130,8 @@ $descrOrSubt: #5f6368;
     &__container {
         display: grid;
         grid-gap: 120px;
-        grid-template-columns: 625px 390px;
-        grid-template-rows: 248px 268px;
-        //padding: 100px 135px;
+        grid-template-columns: 625px 440px;
+        grid-template-rows: 275px 275px;
     }
     &__content {
         padding-top: 10px;
